@@ -1,31 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en"> 
+
+
+
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <input id="cardnumber"></input>
-  <button onclick="validate()">Validar</button>
+  <!--formulario -->
+  <label for="crediCard">Número Tarjeta</label>  
+  <input type="text" name= "crediCard" id="crediCard" maxlength="16" required></input>
+  <button type="submit" onclick="validate()">Validar</button>
+  
   <div id="result"></div>
-  <script lang="javascript">
-    function validate() {
-      const valid = isValid(document.getElementById("cardnumber").value)
-      if (valid) {
-        // Show success in div#result
-      }
-      else {
-        // Show error message in div#result
-      }
-    }
-
-    function isValid(creditCardNumber){
-      // is creditCardNumber valid?
-      return false
-    }
-  </script>
+  <script src="./app.js"></script>
 </body>
 
 </html>
