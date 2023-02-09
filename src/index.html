@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang ="en"> 
 
-
-
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +10,13 @@
 
 <body>
   <!--formulario -->
+ 
   <label for="crediCard">Número Tarjeta</label>  
-  <input type="text" name= "crediCard" id="crediCard" maxlength="16" required></input>
+  <input type="number" name= "crediCard" id="crediCard" maxlength="16" required></input>
   <button type="submit" onclick="validate()">Validar</button>
   
   <div id="result"></div>
+   <div class="foto"></div>
   <script src="./app.js"></script>
 </body>
 
